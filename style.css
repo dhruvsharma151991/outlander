@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+        .button, .name, .profile {
+            cursor: pointer;
+        }
+
+        #comment1, #comment2, #comment3, #comment4, #comment5, #comment6, #content2, #content3, #q2, #q3, #q4, #result1, #result2, #result3 {
+            display: none;
+        }
+
+        body {
+            background-color: #cecece;
+            font-family: Tahoma,Geneva,sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: url("index.html") 10px center no-repeat #656565;
+            padding: 10px;
+        }
+
+            .header p, hr {
+                color: #fff;
+                padding: 0;
+            }
+
+            .header p {
+                background: url("search.png") right center no-repeat;
+                margin: 0 0 0 30px;
+            }
+
+        hr {
+            border: 1px solid #fff;
+            margin: 0;
+        }
+
+        .header span {
+            color: #d7d7d7;
+        }
+
+        .content {
+            padding: 20px 10px;
+        }
+
+        .dt {
+            font-size: 12px;
+            text-align: right;
+        }
+
+        .button, .button2, .loading {
+            text-align: center;
+        }
+
+        .main-content {
+            padding: 10px;
+            background-color: #fff !important;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .flag {
+            background: url("flag.png") 98% 20px no-repeat #fff;
+        }
+
+        .main-content h1 {
+            font-size: 20px;
+        }
+
+        .main-content h2 {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .name, .result {
+            font-weight: 700;
+        }
+
+        .main-content p {
+            font-size: 13px;
+        }
+
+        .main-content span {
+            color: red;
+        }
+
+        p.question {
+            font-size: 15px;
+        }
+
+        .button {
+            border: 2px solid #000;
+            background-color: #dadada;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+
+        .result {
+            margin: 0;
+            background: url("tick.png") left center no-repeat;
+            padding: 5px 0 5px 25px;
+        }
+
+        .button2 {
+            background: -webkit-linear-gradient(#127fd2,#33a7e8);
+            background: -o-linear-gradient(#127fd2,#33a7e8);
+            background: -moz-linear-gradient(#127fd2,#33a7e8);
+            background: linear-gradient(#127fd2,#33a7e8);
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+
+        a.claim {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .comment-status span, .name {
+            color: #3b5998;
+        }
+
+        .profile {
+            float: left;
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .comments {
+            background-color: #eeeff4;
+            border-bottom: 2px solid #fff;
+            padding: 10px;
+        }
+
+        .comment-content img, .profile img {
+            width: 100%;
+        }
+
+        .comment-content {
+            float: left;
+            width: 190px;
+        }
+
+        .name {
+            margin: 0;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        .comment-status {
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .comment-like {
+            background-image: url("like.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+        }
+
+        div.spinner {
+            position: relative;
+            width: 54px;
+            height: 54px;
+            display: inline-block;
+        }
+
+            div.spinner div {
+                width: 12%;
+                height: 26%;
+                background: #000;
+                position: absolute;
+                left: 44.5%;
+                top: 37%;
+                opacity: 0;
+                -webkit-animation: fade 1s linear infinite;
+                -webkit-border-radius: 50px;
+                -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+            }
+
+                div.spinner div.bar1 {
+                    -webkit-transform: rotate(0deg) translate(0,-142%);
+                    -webkit-animation-delay: 0;
+                }
+
+                div.spinner div.bar2 {
+                    -webkit-transform: rotate(30deg) translate(0,-142%);
+                    -webkit-animation-delay: -.9167s;
+                }
+
+                div.spinner div.bar3 {
+                    -webkit-transform: rotate(60deg) translate(0,-142%);
+                    -webkit-animation-delay: -.833s;
+                }
+
+                div.spinner div.bar4 {
+                    -webkit-transform: rotate(90deg) translate(0,-142%);
+                    -webkit-animation-delay: -.75s;
+                }
+
+                div.spinner div.bar5 {
+                    -webkit-transform: rotate(120deg) translate(0,-142%);
+                    -webkit-animation-delay: -.667s;
+                }
+
+                div.spinner div.bar6 {
+                    -webkit-transform: rotate(150deg) translate(0,-142%);
+                    -webkit-animation-delay: -.5833s;
+                }
+
+                div.spinner div.bar7 {
+                    -webkit-transform: rotate(180deg) translate(0,-142%);
+                    -webkit-animation-delay: -.5s;
+                }
+
+                div.spinner div.bar8 {
+                    -webkit-transform: rotate(210deg) translate(0,-142%);
+                    -webkit-animation-delay: -.41667s;
+                }
+
+                div.spinner div.bar9 {
+                    -webkit-transform: rotate(240deg) translate(0,-142%);
+                    -webkit-animation-delay: -.333s;
+                }
+
+                div.spinner div.bar10 {
+                    -webkit-transform: rotate(270deg) translate(0,-142%);
+                    -webkit-animation-delay: -.25s;
+                }
+
+                div.spinner div.bar11 {
+                    -webkit-transform: rotate(300deg) translate(0,-142%);
+                    -webkit-animation-delay: -.1667s;
+                }
+
+                div.spinner div.bar12 {
+                    -webkit-transform: rotate(330deg) translate(0,-142%);
+                    -webkit-animation-delay: -.0833s;
+                }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: .25;
+            }
+        }
